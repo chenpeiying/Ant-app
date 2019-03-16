@@ -1,0 +1,23 @@
+<ion-header no-border>
+    <ion-navbar color="gre">
+      <ion-title text-center>
+        蚁窝找找
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class="input" (click)="input()">
+      <input type="text" placeholder="来蚁窝，找你所想">
+    </div>
+    <ul>
+        <li *ngFor="let item of issues;let i=index;">
+        <div class="content" (click)="GoDetail(i)">
+          <img src="{{item.issue_head}}" alt="">
+          <div class="label">{{item.issue_lable}}</div>
+          <p>{{item.issue_content}}</p>
+        </div>
+      </li>
+    </ul>
+  </ion-content>
+  

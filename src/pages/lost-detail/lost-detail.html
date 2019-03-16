@@ -1,0 +1,39 @@
+<!--
+  Generated template for the PartDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="green">
+    <ion-title>物品详情</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ul>
+    <li *ngFor="let item of founds;let i =index;">
+      <div class="head">
+        <div class="txt">
+          <p>{{item.username}}</p>
+          <span class="time">{{item.item_time}}</span>
+        </div>
+      </div>
+      <h1>{{item.item_name}}</h1>
+      <div class="context">
+        <p>物品种类：{{item.item_type}}&nbsp;&nbsp;&nbsp;{{item.item_number}}</p>
+        <p>拾物地点：{{item.item_addr}}</p>
+        <p>拾物时间：{{item.item_date}}</p>
+        <p>详细描述：</p>
+        <p style="text-indent:2em">{{item.item_content}}</p>
+        <img src="{{item.item_pic}}" alt="">
+      </div>
+    </li>
+  </ul>
+</ion-content>
+<ion-footer>
+    <div class="but">
+      <button (click)="chat()">联系他</button>
+    </div>
+</ion-footer>

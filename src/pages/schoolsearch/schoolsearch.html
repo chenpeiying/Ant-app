@@ -1,0 +1,251 @@
+<!--
+  Generated template for the SchoollistPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="gre">
+    <ion-icon name="md-search" id="mdsearch"></ion-icon>
+    <input type="search" name="school" placeholder="请输入你要找的学校" autocomplete="on" list="names">
+    <datalist id="names">
+      <option>安徽大学</option>
+      <option>安徽师范大学</option>
+      <option>安徽理工大学</option>
+      <option>北京大学</option>
+      <option>北京第二外国语学院</option>
+      <option>北京电影学院</option>
+      <option>北京航空航天大学</option>
+      <option>北京建筑工程学院</option>
+      <option>北京交通大学</option>
+      <option>北京科技大学</option>
+      <option>北京理工大学</option>
+      <option>北京师范大学</option><li>长安大学</li>
+      <option>成都理工大学</option>
+      <option>承德医学院</option>
+      <option>长春理工大学</option>
+      <option>长春工业大学</option>
+      <option>东北财经大学</option>
+      <option>东北大学</option>
+      <option>东北师范大学</option>
+      <option>东华大学</option>
+      <option>东南大学</option>
+      <option>对外经济贸易大学</option>
+      <option>阜阳师范学院</option>
+      <option>复旦大学</option>
+      <option>广州中医药大学</option>
+      <option>广东外语外贸大学</option>
+      <option>桂林电子科技大学（尧山校区）</option>
+      <option>国际关系学院</option>
+      <option>国立华侨大学</option>
+      <option>哈尔滨理工大学</option>
+      <option>河海大学</option>
+      <option>湖北大学</option>
+      <option>湖北经济学院</option>
+      <option>湖南大学</option>
+      <option>湖南商学院</option>
+      <option>华东理工大学</option>
+      <option>华东师范大学</option>
+      <option>河北师范大学</option>
+      <option>河北科技大学</option>
+      <option>河北大学</option>
+      <option>吉林大学</option>
+      <option>江苏警官学院</option>
+      <option>江西财经大学</option>
+      <option>南方医科大学</option>
+      <option>南京财经大学</option>
+      <option>南京大学</option>
+      <option>南京师范大学</option>
+      <option>南京信息工程大学</option>
+      <option>南京邮电大学</option>
+      <option>青岛大学</option>
+      <option>清华大学</option>
+      <option>山东科技大学</option>
+      <option>山东师范大学</option>
+      <option>汕头大学</option>
+      <option>上海大学</option>
+      <option>上海海事大学</option>
+      <option>上海海洋大学</option>
+      <option>上海交通大学</option>
+      <option>上海师范大学</option>
+      <option>上海体育学院</option>
+      <option>上海外国语大学</option>
+      <option>深圳大学</option>
+      <option>首都师范大学</option>
+      <option>首都医科大学</option>
+      <option>天津财经大学</option>
+      <option>天津大学</option>
+      <option>南开大学</option>
+      <option>天津音乐学院</option>
+      <option>同济大学</option>
+      <option>武汉大学</option>
+      <option>西安电子科技大学</option>
+      <option>西安交通大学</option>
+      <option>西北大学</option>
+      <option>西北政法大学</option>
+      <option>西南大学</option>
+      <option>西南政法大学</option>
+      <option>扬州大学</option>
+      <option>中国传媒大学</option>
+      <option>中国农业大学</option>
+      <option>中国人民大学</option>
+      <option>中国石油大学</option>
+      <option>中国医科大学</option>
+      <option>中国政法大学</option>
+      <option>中南财经大学</option>
+      <option>中南财经政法大学</option>
+      <option>中山大学</option>
+      <option>中央民族大学</option>
+      <option>中央戏剧学院</option>
+    </datalist>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <h5 class="first">A
+    <ion-icon name="md-arrow-dropdown" (click)="changecontent('1')"></ion-icon></h5>
+  <ul id="1">
+    <li>安徽大学</li>
+    <li>安徽师范大学</li>
+    <li>安徽理工大学</li>
+  </ul>
+  <h5>B<ion-icon name="md-arrow-dropdown" (click)="changecontent('2')"></ion-icon></h5>
+
+  <ul id="2">
+    <li>北京大学</li>
+    <li>北京第二外国语学院</li>
+    <li>北京电影学院</li>
+    <li>北京航空航天大学</li>
+    <li>北京建筑工程学院</li>
+    <li>北京交通大学</li>
+    <li>北京科技大学</li>
+    <li>北京理工大学</li>
+    <li>北京师范大学</li>
+  </ul>
+  <h5>C<ion-icon name="md-arrow-dropdown" (click)="changecontent('3')"></ion-icon></h5>
+
+  <ul id="3">
+    <li>长安大学</li>
+    <li>成都理工大学</li>
+    <li>承德医学院</li>
+    <li>长春理工大学</li>
+    <li>长春工业大学</li>
+  </ul>
+  <h5>D<ion-icon name="md-arrow-dropdown" (click)="changecontent('4')"></ion-icon></h5>
+  <ul id="4">
+    <li>东北财经大学</li>
+    <li>东北大学</li>
+    <li>东北师范大学</li>
+    <li>东华大学</li>
+    <li>东南大学</li>
+    <li>对外经济贸易大学</li>
+  </ul>
+  <h5>F<ion-icon name="md-arrow-dropdown" (click)="changecontent('5')"></ion-icon></h5>
+  <ul id="5">
+    <li>阜阳师范学院</li>
+    <li>复旦大学</li>
+  </ul>
+  <h5>G<ion-icon name="md-arrow-dropdown" (click)="changecontent('6')"></ion-icon></h5>
+  <ul id="6">
+    <li>广州中医药大学</li>
+    <li>广东外语外贸大学</li>
+    <li>桂林电子科技大学（尧山校区）</li>
+    <li>国际关系学院</li>
+    <li>国立华侨大学</li>
+  </ul>
+  <h5>H<ion-icon name="md-arrow-dropdown" (click)="changecontent('7')"></ion-icon></h5>
+  
+  <ul id="7">
+    <li>哈尔滨理工大学</li>
+    <li>河海大学</li>
+    <li>湖北大学</li>
+    <li>湖北经济学院</li>
+    <li>湖南大学</li>
+    <li>湖南商学院</li>
+    <li>华东理工大学</li>
+    <li>华东师范大学</li>
+    <li>河北师范大学</li>
+    <li>河北科技大学</li>
+    <li>河北大学</li>
+  </ul>
+  <h5>J<ion-icon name="md-arrow-dropdown" (click)="changecontent('8')"></ion-icon></h5>
+  <ul id="8">
+    <li>吉林大学</li>
+    <li>江苏警官学院</li>
+    <li>江西财经大学</li>
+  </ul>
+
+  <h5>N<ion-icon name="md-arrow-dropdown" (click)="changecontent('9')"></ion-icon></h5>
+  <ul id="9">
+    <li>南方医科大学</li>
+    <li>南京财经大学</li>
+    <li>南京大学</li>
+    <li>南京师范大学</li>
+    <li>南京信息工程大学</li>
+    <li>南京邮电大学</li>
+  </ul>
+
+  <h5>Q<ion-icon name="md-arrow-dropdown" (click)="changecontent('10')"></ion-icon></h5>
+  <ul id="10">
+    <li>青岛大学</li>
+    <li>清华大学</li>
+  </ul>
+  <h5>S<ion-icon name="md-arrow-dropdown" (click)="changecontent('11')"></ion-icon></h5>
+  <ul id="11">
+    <li>山东科技大学</li>
+    <li>山东师范大学</li>
+    <li>汕头大学</li>
+    <li>上海大学</li>
+    <li>上海海事大学</li>
+    <li>上海海洋大学</li>
+    <li>上海交通大学</li>
+    <li>上海师范大学</li>
+    <li>上海体育学院</li>
+    <li>上海外国语大学</li>
+    <li>深圳大学</li>
+    <li>首都师范大学</li>
+    <li>首都医科大学</li>
+  </ul>
+  <h5>T<ion-icon name="md-arrow-dropdown" (click)="changecontent('12')"></ion-icon></h5>
+  <ul id="12">
+    <li>天津财经大学</li>
+    <li>天津大学</li>
+    <li>南开大学</li>
+    <li>天津音乐学院</li>
+    <li>同济大学</li>
+  </ul>
+  <h5>W<ion-icon name="md-arrow-dropdown" (click)="changecontent('13')"></ion-icon></h5>
+  <ul id="13">
+    <li>武汉大学</li>
+  </ul>
+  <h5>X<ion-icon name="md-arrow-dropdown" (click)="changecontent('14')"></ion-icon></h5>
+  <ul id="14">
+    <li>西安电子科技大学</li>
+    <li>西安交通大学</li>
+    <li>西北大学</li>
+    <li>西北政法大学</li>
+    <li>西南大学</li>
+    <li>西南政法大学</li>
+  </ul>
+  <h5>Y<ion-icon name="md-arrow-dropdown" (click)="changecontent('15')"></ion-icon></h5>
+  <ul id="15">
+    <li>扬州大学</li>
+  </ul>
+  <h5>Z<ion-icon name="md-arrow-dropdown" (click)="changecontent('16')"></ion-icon></h5>
+  <ul id="16">
+    <li>中国传媒大学</li>
+    <li>中国农业大学</li>
+    <li>中国人民大学</li>
+    <li>中国石油大学</li>
+    <li>中国医科大学</li>
+    <li>中国政法大学</li>
+    <li>中南财经大学</li>
+    <li>中南财经政法大学</li>
+    <li>中山大学</li>
+    <li>中央民族大学</li>
+    <li>中央戏剧学院</li>
+  </ul>
+  
+</ion-content>

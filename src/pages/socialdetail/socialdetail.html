@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-navbar color="trans">
+      <ion-title>想找旧手机</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content>
+   <ul>
+     <li *ngFor="let item of issue;">
+        <div class="top">
+            <img src="{{item.issue_head}}" alt="">
+            <p>{{item.username}}</p>
+            <span>2018-11-28</span>
+          </div>
+          <div class="mid">
+            <p><span>{{item.issue_lable}}</span>{{item.issue_content}}</p>
+            <img src="{{item.issue_pic}}" alt="">
+          </div>
+     </li>
+   </ul>   
+  </ion-content>
+  
+  <ion-footer no-border>
+    <div class="but">
+      <button (click)="chat()" ion-button>联系对方</button>
+    </div>
+  </ion-footer>

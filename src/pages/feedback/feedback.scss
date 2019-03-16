@@ -1,0 +1,57 @@
+page-feedback {
+    .toolbar-title-md{
+        padding-left:80px;
+    }
+    ion-content{
+        background-color: #eee !important;
+    }
+    .put{
+       padding-left: 20px;
+       padding-top: 10px;
+        background-color: #fff;
+    }
+    textarea{
+        border: 1px solid #fff;
+    }
+    
+    .tel{
+        margin-top: 25px;
+        height: 45px;
+        background-color: #fff;
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+    .tel input{
+        width: 70%;
+        border: 1px solid #fff;
+        padding-left: 10px;
+    }
+    .submit button{
+        width:100%;
+        height: 50px;
+        margin-top: 20px;
+        background-color: #2AAF74;
+        color:#fff;
+        font-size:15px;
+    }
+    #div1{
+        overflow:auto;
+        height: 130px;
+        div{
+            width:106px;
+            height:106px;
+            padding: 0px;
+            margin:0px;
+            float: left;
+            overflow: hidden;
+            img{
+                width:106px;
+            }
+        }
+    }
+    ion-footer{
+        button{
+          height: 55px!important;
+        }
+    }
+}

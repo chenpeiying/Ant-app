@@ -1,0 +1,42 @@
+page-mine {
+    ion-content{
+        background-color:#eee!important;
+        .list ion-icon{
+            height: 21px;
+            font-size:20px;
+            margin-top: 10px;
+            padding-left: 250px;
+            //padding-right: 0px;
+        }
+        .top{
+            height:187px;
+            text-align: center;
+            background-image:url("../assets/imgs/bg.jpg");
+            background-size:cover;
+            img{
+                width:30%;
+                height:100px;
+                border-radius: 50%;
+                margin-top:20px;
+                margin-left:20%;
+            }
+            button{
+                float:right;
+                background-color:transparent;
+            }
+            ion-icon::before{
+                font-size: 25px;
+                width:30px;
+            }
+            p{
+                font-size:20px;
+                color:#fff;
+            }
+        }
+        ion-list{
+            .lost{
+                margin-top:50px;
+            }
+        }
+    }
+}

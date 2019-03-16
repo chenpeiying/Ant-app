@@ -1,0 +1,84 @@
+<ion-header text-center no-border>
+  <ion-navbar color="green">
+    <ion-title>蚂蚁寻物</ion-title>
+  </ion-navbar>
+  <div class="sea">
+      <div class="school">
+        <span id="school"></span>
+      </div>
+      <div class="search">
+         <input (focus)="GoSearch()" type="text" value="来蚂蚁，寻你所想">
+         <ion-icon (click)="GoSearch()" name="ios-search-outline"></ion-icon>
+      </div>
+    </div>
+</ion-header>
+<ion-content>
+ <div class="banner">
+    <ion-slides pager="true" autoplay="1000" loop="true" class="sli">
+        <ion-slide>
+          <img src="../../assets/imgs/home_banner1.jpg" alt="banner">
+        </ion-slide>
+        <ion-slide>
+            <img src="../../assets/imgs/home_banner2.jpg" alt="banner">
+        </ion-slide>
+        <ion-slide>
+            <img src="../../assets/imgs/home_banner3.jpg" alt="banner">
+        </ion-slide>
+      </ion-slides>
+ </div>
+ <div class="tips">
+   <div (click)="GoGoods()" class="tip">
+      <ion-icon  name="ios-book-outline"></ion-icon>
+      <span>物品买卖</span>
+   </div>
+   <div (click)="GoLost()" class="tip">
+      <ion-icon name="ios-bulb-outline"></ion-icon>
+      <span>失物招领</span>
+   </div>
+   <div (click)="GoReplace()" class="tip">
+      <ion-icon name="ios-briefcase-outline"></ion-icon>
+      <span>代取服务</span>
+   </div>
+   <div class="tip" (click)="GoPart()">
+      <ion-icon name="ios-people-outline"></ion-icon>
+      <span>兼职招聘</span>
+   </div>
+   <div class="tip" (click)="GoFriend()">
+      <ion-icon name="ios-happy-outline"></ion-icon>
+      <span>寻找伙伴</span>
+   </div>
+   <div class="tip" (click)="GoTodo()">
+      <ion-icon name="ios-clipboard-outline"></ion-icon>
+      <span>日志清单</span>
+   </div>
+    <div class="tip" (click)="link()">
+      <ion-icon name="ios-school-outline"></ion-icon>
+      <span>教务系统</span>
+   </div>
+   <div class="tip">
+      <ion-icon name="ios-list-outline"></ion-icon>
+      <span>更多</span>
+   </div>
+ </div>
+ <hr>
+ <div class="more">
+   <span>好物推荐</span>
+   <a (click)="GoMore()">
+      查看更多
+      <ion-icon name="ios-arrow-forward"></ion-icon>
+   </a>
+ </div>
+ <div class="goods">
+    <ul>
+      <li *ngFor="let item of new;let i =index;">
+        <div class="li" (click)="Godetail(i)">
+          <img src="{{item.goods_pic}}" alt="picture">
+          <div class="txt">
+             <p style="color:#ffffff;">{{item.goods_name}}</p>
+             <p style="color:#f7be7f;">RMB&nbsp;&nbsp;{{item.goods_price}}</p>
+           </div>
+        </div>
+      </li>
+    </ul>
+</div>
+</ion-content>

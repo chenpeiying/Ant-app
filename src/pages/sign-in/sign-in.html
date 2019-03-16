@@ -1,0 +1,45 @@
+<ion-content>
+    <p class="title">蚂蚁寻物</p>
+    <div class="inp">
+      <ion-icon name="md-person"></ion-icon>
+      <span>姓名：</span>
+      <input type="text" [(ngModel)] = username>
+    </div>
+    <div class="inp">
+      <ion-icon name="md-school"></ion-icon>
+      <span>身份：</span>
+      <select [(ngModel)]="id" name="kind" class="kind" (change)="show()">
+        <option value="学生">学生</option>
+        <option value="非学生">非学生</option>
+      </select>
+    </div>
+    <div class="inp" id="number" style="display:none">
+      <ion-icon name="md-school"></ion-icon>
+      <span>学号：</span>
+      <input type="text" [(ngModel)]="schoolid">
+    </div>
+    <div class="inp">
+      <ion-icon name="md-home"></ion-icon>
+      <span>学校：</span>
+      <input type="text" [(ngModel)]="school">
+    </div>
+    <div class="inp">
+      <ion-icon name="md-phone-portrait"></ion-icon>
+      <span>手机：</span>
+      <input type="text" [(ngModel)]="telNum">
+    </div>
+    <div class="inp">
+      <ion-icon name="md-key"></ion-icon>
+      <span>密码：</span>
+      <input type="password"[(ngModel)]="psw">
+    </div>
+    <div class="inp">
+      <ion-icon name="md-key"></ion-icon>
+      <span>确认密码：</span>
+      <input type="password">
+    </div>
+    <button (click)="signup()">注册</button>
+  </ion-content>
+  <ion-footer>
+    <span (click)="signup1()">已有账号？点击登录</span>
+  </ion-footer>

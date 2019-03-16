@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-navbar color="green">
+      <ion-title>商品详情</ion-title>
+    </ion-navbar>
+  </ion-header>
+  <!-- <p>{{good.usename}}</p> -->
+  <ion-content>
+    <ul>
+      <li *ngFor="let item of goods;let i=index;">
+          <div class="head">
+              <div class="txt">
+                <p>{{item.username}}</p>
+                <span class="time">{{item.goods_date}}</span>
+                <span class="place">{{item.goods_addr}}</span>
+              </div>
+            </div>
+            <div class="money">
+              <span class="name">{{item.goods_name}}</span>
+              <span class="price">￥{{item.goods_price}}</span>
+            </div>
+            <div class="detail"><p>详细描述</p></div>
+            <div class="con">
+              <p style="text-indent:2em">{{item.goods_description}}</p>
+              <img src="{{item.goods_pic}}" alt="">
+            </div>
+            <button class="but" (click)="delete(i)">删除</button>
+      </li>
+    </ul>
+  </ion-content>

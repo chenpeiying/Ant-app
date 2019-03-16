@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="green">
+    <ion-title>猜你喜欢</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="goods">
+      <ul>
+          <li *ngFor="let item of goods;let i =index;">
+            <div class="li" (click)="Godetail(i)">
+              <img src="{{item.goods_pic}}" alt="picture">
+              <div class="txt">
+                 <span>{{item.goods_name}}</span>
+                 <p>RMB{{item.goods_price}}</p>
+               </div>
+            </div>
+          </li>
+        </ul>
+ </div>
+</ion-content>

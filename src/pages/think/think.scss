@@ -1,0 +1,43 @@
+page-think {
+    ion-navbar{
+        height: 45px;
+    }
+    p{
+        text-align: center;
+        font-size:20px;
+    }
+    .content{
+        padding-left: 0px;
+        margin-top: 0px;
+        li{
+            width: 100%;
+            height: 65px;
+            margin-top: 10px;
+            border-bottom: 1px solid #BBBBBB;
+        }
+        div{
+            float: left;
+        }
+        .peo{   
+            width: 20%;
+            img{
+                width:56px;
+                height:56px;
+                border-radius:50%;
+            }
+        }
+        .msg{
+            width:65%;
+            a{
+                color:#F7BE7F;
+            }
+            margin-top: 5px;
+            line-height: 27px;
+        }
+        .time{
+            width: 15%;
+            margin-top: 35px;
+        }
+    }
+    
+}

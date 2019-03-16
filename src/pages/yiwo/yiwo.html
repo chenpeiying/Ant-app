@@ -1,0 +1,29 @@
+<!--
+  Generated template for the YiwoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton="true" color="trans">
+    <p style="float:left;padding-left:20px" (click)="goback()">取消</p>
+    <p style="float:right;padding-right:20px;color:#2AAF74" (click)="gosuccess()">发布</p>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <form text-center>
+    <ion-textarea name="txt" [(ngModel)]="text" placeholder="#分享你的故事#" [(ngModel)]="issue_content"></ion-textarea>
+    <div id="div1" text-left>
+      <div><img src="assets/imgs/takephoto.png" style="width:106px;" (click)="change()"></div>
+    </div>
+    <div class="tips" text-left>
+    <p (click)="buy()">{{tipfir}}</p>
+    <p (click)="lost()">{{tipsec}}</p>
+    </div>
+  </form>
+</ion-content>
+<ion-footer style="display:none;background-color: #aaa;" id="footer">
+    <button ion-button block color="white" (click)="takephoto()">拍照</button>
+    <button ion-button block color="white" (click)="selectphoto()">从相册挑选</button>
+    <button ion-button block color="white" (click)="back()">取消</button>
+</ion-footer>

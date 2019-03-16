@@ -1,0 +1,37 @@
+page-chat {
+    position: relative;
+    ion-navbar{
+        height: 45px;
+    }
+    .toolbar-title-md{
+        padding-right:40px;
+        padding-left:0px;
+    }
+   .toolbar-content-md{
+    padding-right:40px;
+    }
+   ion-content{
+    .inp{
+        position: absolute;
+        bottom:0;
+        width:100%;
+        height: 50px;
+        padding:10px;
+        background-color: #eee;
+        input{
+            height: 35px;
+            width:80%;
+            border:none;
+            border-radius: 25px;
+        }
+        button{
+            color:#fff;
+            margin-left: 10px;
+            height: 35px;
+            width: 50px;
+            background-color:#2AAF74;
+            border-radius: 10%;
+        }
+    }
+   }
+}

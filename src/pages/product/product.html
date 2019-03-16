@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar color="gre">
+    <ion-title>我的发布</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ul>
+        <li *ngFor="let item of job;let i=index;">
+          <div class="content1">
+            <h5 (click)="GoDetail1(i)">{{item.part_name}}</h5>
+            <p>{{item.part_addr}}</p>
+          </div>
+        </li>
+      </ul>
+    <ul>
+        <li *ngFor="let item of issue;let i=index;">
+        <div class="content2" (click)="GoDetail2(i)">
+          <div class="label">{{item.issue_lable}}</div>
+          <p>{{item.issue_content}}</p>
+        </div>
+      </li>
+    </ul>
+    <ul>
+        <li id="one" *ngFor="let item of found;let i=index;">
+            <div class="content3" (click)="GoDetail3(i)">
+                <div class="txt">
+                  <span>{{item.item_name}}</span>
+                  <p>{{item.item_type}}·{{item.item_content}}</p>
+                </div>
+              </div>
+        </li>
+    </ul>
+</ion-content>

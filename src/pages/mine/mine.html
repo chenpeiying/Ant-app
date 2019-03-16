@@ -1,0 +1,19 @@
+<ion-content>
+  <div class="top">
+    <img id="img" src="" alt="">
+    <button ion-button>
+      <ion-icon name="md-settings" (click)="seting()"></ion-icon>
+    </button>
+    <p id="name"></p>
+  </div>
+
+  <ion-list class="list">
+    <ion-item detail-push (click)="goto()"> 我的发布 </ion-item>
+    <ion-item detail-push (click)="go()"> 我的代取 </ion-item>
+    <ion-item detail-push (click)="public()"> 我的物品 </ion-item>
+    <div class="lost">
+      <ion-item (click)="help()">帮助与反馈<ion-icon name="md-arrow-dropright"></ion-icon></ion-item>
+    </div>  
+  </ion-list>
+    
+</ion-content>

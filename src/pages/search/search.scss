@@ -1,0 +1,41 @@
+page-search {
+    ion-header{
+        input{
+            width:90%;
+            height:30px;
+            border:1px solid #ccc;
+            border-radius: 20px;
+            margin-left:10px;
+            text-align: center;
+            color:#eee;
+        }
+    }
+    ion-content{
+        .top{
+            margin-top:10px;
+            ion-icon{
+                margin-left:10px;
+                margin-right:10px;
+            }
+        }
+        .hot{
+            text-align: center;
+            ul{
+                text-decoration: none;
+                padding: 0px;
+            }
+            li{
+                list-style: none;
+                width:30%;
+                height:30px;
+                background-color:#eee;
+                margin-left:10px;
+                float:left;
+                p{
+                    margin:0px;
+                    margin-top:5px;
+                }
+            }
+        }
+    }
+}

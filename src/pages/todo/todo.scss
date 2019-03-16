@@ -1,0 +1,38 @@
+page-todo {  
+    background-color: #eee !important;
+    ion-title{
+        padding-left: 25%;
+    }
+    .shuru{
+        padding:10px;
+        width:100%;
+        height:40px;
+        margin: 5px 0;
+        border:1px solid #999;
+    }
+    h5{
+        margin-top:0;
+        background-color: #eee;
+        padding-left: 10px;
+    }
+    span{
+        padding-left: 10px;
+    }
+    ul{
+        margin:0;
+    }
+    ul li{
+        width: 100%;
+        height: 25px;
+        line-height: 25PX;
+    }
+    button{
+        background-color: #fff;
+        color: #2AAF74;
+        width: 40px;
+        height:20px;
+        line-height: 20PX;
+        border-radius: 15%;
+        float: right;
+    }
+}

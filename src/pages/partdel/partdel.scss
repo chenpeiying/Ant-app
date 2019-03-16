@@ -1,0 +1,67 @@
+page-partdel {
+    ul{
+        padding:0;
+        margin:0;
+    }
+    ion-title{
+        text-align: center;
+        padding-right: 45px;
+    }
+    .head{
+        width: 96%;
+        height:70px;
+        margin:0 2%;
+        border-bottom: 0.5px solid #ccc;
+        img{
+            width: 15%;
+            height: 50px;
+            margin:10px 5px;
+        }
+        .txt{
+            position: relative;
+            float: right;
+            width: 80%;
+            height: 60px;
+            padding:10px 0;
+            p{
+                font-size: 18px;
+                margin:0;
+            }
+            .time{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                color:#ccc;
+            }
+        }
+    }
+    h3{
+        color:#f7be7f;
+        margin-left: 15px;
+    }
+    .money{
+        margin:0 15px;
+        p{
+            color:#f00;
+            font-size: 16px;
+        }
+    }
+    .context{
+        margin-left: 15px;
+    }
+    .detail{
+        margin:10px 15px;
+        p{
+            margin:3px 0;
+        }
+    }
+    .but{
+        width: 20%;
+        height: 30px;
+        margin:15px;
+        color:#fff;
+        background: #f00;
+        float: right;
+        border-radius: 15px;
+    }
+}

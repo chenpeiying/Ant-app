@@ -1,0 +1,40 @@
+page-schoolsearch {
+    input{
+        width:210px;
+        height:35px;
+        border-radius:15px;
+        margin:6px  55px  6px 0px;
+        padding-left: 20px;
+        border:none;
+    }
+    #mdsearch{
+        position: relative;
+        left:20px;
+    }
+    .back-button-icon-md{
+        position: absolute;
+        left:0px;
+    }
+    h5{
+        margin:0;
+        background-color: #cccccc;
+        padding:3px;
+    }
+    ion-icon{
+        position: absolute;
+        left:320px;
+    }
+    ul{
+        margin:0px;
+        display: block;
+        li{
+            margin:5px;
+        }
+    }
+    datalist{
+        option{
+            font-size: 20px;
+        }
+    }
+
+}

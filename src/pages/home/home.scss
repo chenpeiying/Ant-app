@@ -1,0 +1,134 @@
+page-home {
+    position: relative;
+    ul{
+        padding:0;
+        margin:0;
+    }
+    .sea{
+        margin:3px 0;
+        width: 100%;
+        height:40px;
+        position: relative;
+        .school{
+            float: left;
+            color:#fd9321;
+            width: 35%;
+            font-size:15px;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 2%;
+        }
+        .search{
+            float:right;
+            width: 65%;
+            height: 40px;
+            padding:5px;
+            input{
+                padding-left:10px;
+                width:100%;
+                height: 30px;
+                color:#ccc;
+                border:1px solid #999;
+                border-radius:15px;
+            }
+            ion-icon{
+                position: absolute;
+                right:15px;
+                top:10px;
+            }
+        }
+    }
+    ion-content{
+        .banner{
+            width: 100%;
+            height: 180px;
+            .sli img{
+                width:100%;
+                height: 180px;
+                
+            }
+        }
+        .tips{
+            width: 100%;
+            height: 100px;
+            margin:15px 0;
+            .tip{
+               a{
+                   text-decoration: none;
+                color:#000!important;
+               }
+                margin-bottom:5px;
+                width: 25%;
+                height: 50px;
+                padding:0 5px;
+                float: left;
+                ion-icon{
+                    width: 100%;
+                    height: 30px;
+                    float: left;
+                    text-align: center;
+                    font-size:25px;
+                    line-height: 30px;
+                }
+                span{
+                    width: 100%;
+                    height:20px;
+                    line-height: 20px;
+                    float: left;
+                    text-align: center;
+                    font-size: 12px;
+                }
+            }
+        }
+        hr{
+            width: 100%;
+            height: 1px;
+            margin:0;
+            border-top:1px solid #f7be7f;
+        }
+        .more{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            padding:0 15px;
+            a{
+                float: right;
+                color:#f7be7f!important;
+            }
+        }
+        .goods{
+            width: 100%;
+            padding:0;
+            height:auto;
+            //border:1px solid black;
+            .li{
+                position: relative;
+                float: left;
+                margin:1.5%;
+                padding:0;
+                width:47%;
+                height: 150px;
+                border:1px solid #ccc;
+                img{
+                    width: 100%;
+                    height: 150px;
+                }
+                .txt{
+                    width: 100%;
+                    height: 50px;
+                    background-color:rgba(0,0,0,0.5);
+                    position: absolute;
+                    bottom:0;
+                    text-align: center;
+                    p{
+                        margin:0;
+                        width: 100%;
+                        text-align: center;
+                        height: 25px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

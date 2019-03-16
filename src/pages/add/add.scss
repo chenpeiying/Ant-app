@@ -1,0 +1,36 @@
+page-add {
+    ion-content{
+        ul{
+            overflow:hidden;
+            margin:0px;
+            padding:0px;
+            li{
+                float:left;
+                width:71px;
+                margin:9px 21px;
+                height:130px;
+                div{
+                    background-color:#EEEEEE;
+                    border-radius:50%;
+                    width:71px;
+                    height:71px;
+                    padding-top:20px;
+                }
+               p{
+                   font-size:16px;
+                   margin-top:10px;
+               }
+            }
+           
+        }
+        .first{
+            padding:205px  63px 0  63px;
+        }
+        .second{
+            padding:0  22px;
+            li{
+                margin:9px 17px;
+            }
+        }
+    }
+}

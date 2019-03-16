@@ -1,0 +1,52 @@
+page-public {
+    ul{
+        padding:0;
+        margin:0;
+    }
+    ion-content{
+        background-color: #eee !important;
+      
+    }
+    ion-title{
+        padding-left: 70px;
+    }
+    .product{
+        height:100px;
+        background-color: #fff;
+        margin:3px 0;
+    }
+    img{
+        width: 100px;
+        height:100px;
+        float: left;
+        padding:3px 0;
+    }
+    .shangpin{   
+        font-size: 18px;
+        margin:10px;
+    }
+    .jiage{
+        float:right; 
+        margin-right: 5px;
+        color: #F7BE7F;  
+        font-size: 18px;
+        text-align: right;
+    }
+    .det{
+        font-size: 15px;
+        margin-top:10px;
+        margin-left: 110px;
+        height: 40px;
+        overflow: hidden;
+    }
+    .det span{
+        color: #2AAF74;
+    }
+    button{
+        background-color: #fff;
+        float:right;
+        color: red;
+        margin-top: -5px;
+    }
+}
+

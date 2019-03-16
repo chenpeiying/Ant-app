@@ -1,0 +1,25 @@
+page-set {
+    ion-content{
+       
+        background-color: #eee !important;
+    }
+    ion-list{
+        padding-top: 20px;
+    }
+    ion-title{
+        padding-left: 80px;
+    }
+    .submit button{
+        width:100%;
+        height: 50px;
+        margin-top: 20px;
+        background-color: #2AAF74;
+        color:#fff;
+        font-size:15px;
+    }
+    ion-icon{
+        font-size:30px;
+        // margin-top: 10px;
+        padding-left: 250px;
+    }
+}

@@ -1,0 +1,28 @@
+
+<ion-header>
+  <ion-navbar color="green">
+    <ion-title>失物招领</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+  <div class="search">
+    <input type="text" value="来蚂蚁，寻你所想">
+  </div>
+<div class="banner">
+  <img src="../../assets/imgs/lost_banner.jpg">
+</div>
+<div class="goods">
+  <ul>
+    <li *ngFor="let item of founds;let i=index;">
+        <div class="good" (click)="GoDetail(i)">
+            <img src="{{item.item_head}}" alt="">
+            <div class="txt">
+              <span>{{item.item_name}}</span>
+              <p>{{item.item_type}}·{{item.item_content}}</p>
+            </div>
+          </div>
+    </li>
+  </ul>
+</div>
+</ion-content>

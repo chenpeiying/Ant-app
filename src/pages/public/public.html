@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar color="gre">
+    <ion-title>我的物品</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ul>
+    <li *ngFor="let item of good;let i=index;">
+        <div (click)="godetail(i)" class="product">
+            <img src="{{item.goods_pic}}" alt="">
+            <span class="shangpin">{{item.goods_name}}</span>
+            <span class="jiage">￥{{item.goods_price}}</span>
+            <p class="det"><span>详细信息：</span>{{item.goods_description}}</p>
+          </div>
+    </li>
+  </ul>
+</ion-content>

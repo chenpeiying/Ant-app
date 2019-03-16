@@ -1,0 +1,58 @@
+page-shiwu {
+    ion-header{
+        ion-navbar{
+            p{
+                font-size:20px;
+                margin:10px 0;
+            }
+        }
+    }
+    ion-content{
+        text-align:center;
+        
+        ion-label{
+            font-size:18px;
+            color:#F7BE7F;
+            margin-top:0px;
+            text-align-last: justify;
+            padding-right:12px;
+        }
+        ion-input{
+            border-radius: 20px;
+            padding:0px 0;
+            text-align:center;
+        }
+        ion-textarea{
+            margin-top:6px;
+            padding-left:2px;
+        }
+       
+        .label-md{
+            margin:2px 1px  2px 1px;
+        }
+        .text-input-md{
+            margin:5px 1px;
+        }
+        #div1{
+            overflow:auto;
+            // height: 120px;
+            div{
+                width:106px;
+                height:106px;
+                padding: 0px;
+                margin:0px;
+                float: left;
+                overflow: hidden;
+                img{
+                    width:106px;
+                }
+            }
+        }
+    }
+    ion-footer{
+        button{
+          height: 45px!important;
+          font-size:17px!important;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+<ion-header no-border>
+    <ion-navbar color="gre">
+      <ion-title>我的代取</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content>
+      <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+      </ion-refresher>
+
+
+    <ul>
+          <li *ngFor="let item of del;let i=index;">
+            <div class="content1">
+                <h5>{{item.take_name}}&nbsp;|&nbsp;{{item.take_place}}</h5>
+                <button (click)="delete(i)">删除</button>
+                <p class="issue">{{item.take_content}}</p>
+                <p class="time">{{item.take_time}}</p>
+              </div>
+          </li>
+        </ul>
+  </ion-content>

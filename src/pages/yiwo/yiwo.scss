@@ -1,0 +1,61 @@
+page-yiwo {
+    ion-header{
+        ion-navbar{
+            p{
+                font-size:22px;
+                margin:0px 0;
+            }
+        }
+    }
+    ion-content{
+        background:#eee!important;
+        form{
+            width: 100%;
+            // margin-top: 10px;
+            padding:5px 10px;
+            background:#fff;
+            ion-textarea{
+                height:110px;
+            }
+            #div1{
+                overflow:auto;
+                height: 130px;
+                div{
+                    width:106px;
+                    height:106px;
+                    padding: 0px;
+                    margin:0px;
+                    float: left;
+                    overflow: hidden;
+                    img{
+                        width:106px;
+                    }
+                }
+            }
+            .tips{
+                width: 100%;
+                // height: 20px;
+                background-color: #fff;
+                overflow: hidden;
+                p{
+                    float:left;
+                    margin:3px;
+                    padding: 3px;
+                    margin-right: 5px;
+                    width: 25%;
+                    height: 30px;
+                    text-align: center;
+                    background: #eee;
+                    border-radius: 15px;
+                }
+            }
+            
+        }
+    }
+    ion-footer{
+        button{
+          height: 45px!important;
+          font-size:17px!important;
+        }
+    }
+}

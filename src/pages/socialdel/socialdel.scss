@@ -1,0 +1,70 @@
+page-socialdel {
+    ul{
+        padding:0;
+        margin:0;
+    }
+    .toolbar-title-md{
+        padding-left:70px;
+        color:#333!important;
+    }
+    .back-button-icon-md{
+        color:#2aaf74;
+    }
+    element.style{
+        margin-bottom:0px;
+    }
+    ion-content{
+        .top{
+            margin-top:10px;
+            height:70px;
+            img{
+                width:50px;
+                height:50px;
+                border:2px solid #f7be7f;
+                border-radius: 50%;
+                float:left;
+                margin-left:20px;
+                margin-right:15px;
+            }
+            p{
+                width:200px;
+                margin:0px;
+                font-size: 16px;
+                padding-top:13px;
+            }
+            span{
+                float:right;
+                margin-top:-16px;
+                margin-right:20px;
+                color:#ccc;
+            }
+        }
+        .mid{
+            margin-left:30px;
+            width:300px;
+            height:auto;
+            border:1px solid #ccc;
+            p{
+                span{
+                    color:#f7be7f;
+                }
+                margin-left:15px;
+            }
+            img{
+                width:270px;
+                height:270px;
+                margin-left:15px;
+                margin-bottom:10px;
+            }
+        }
+        .but{
+            width: 20%;
+            height: 30px;
+            margin:15px;
+            color:#fff;
+            background: #f00;
+            float: right;
+            border-radius:5px;
+        }
+    }
+}

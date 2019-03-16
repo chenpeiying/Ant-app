@@ -1,0 +1,29 @@
+<!--
+  Generated template for the BPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+    <ion-navbar color="gre" text-center>
+      <ion-title>代取服务</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class="banner">
+      <img src="assets/imgs/timg.jpg" alt="">
+    </div>
+   <ul>
+     <li *ngFor="let item of delivery">
+        <div class="content">
+            <img src="{{item.take_head}}" alt="">
+            <p class="name">{{item.username}}</p>
+            <h5>{{item.take_name}}&nbsp;|&nbsp;{{item.take_place}}</h5>
+            <p class="issue">{{item.take_content}}</p>
+            <p class="time">{{item.take_time}}</p>
+            <button (click)="chat()" ion-button>联系对方</button>
+          </div>
+     </li>
+   </ul>
+  </ion-content>

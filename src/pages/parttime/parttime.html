@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="green">
+    <ion-title>兼职招聘</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="banner">
+    <img src="assets/imgs/part-banner.jpg" alt="">
+  </div>
+  <ul>
+    <li *ngFor="let item of jobs;let i=index;">
+      <div class="con" (click)="GoDetail(i)">
+        <h5>{{item.part_name}}</h5>
+        <p>{{item.part_addr}}</p>
+        <span>{{item.part_price}}</span>
+      </div>
+    </li>
+  </ul>
+</ion-content>

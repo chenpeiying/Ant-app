@@ -1,0 +1,63 @@
+<!--
+  Generated template for the ZiliaoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="gre">
+    <ion-title>编辑资料</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+ <ul>
+   <li *ngFor="let item of user">
+    <ion-list class="xingming">
+      <ion-item>昵 &nbsp;&nbsp;&nbsp;称<input type="text" placeholder="{{item.username}}" [(ngModel)]="uname" name="uname">
+          <div class="touxiang"><img src="{{item.avatar}}" alt="" (click)="change()"></div>
+      </ion-item>
+    </ion-list>
+    <ion-list class="zhanghao">
+      <ion-item>手机号<input type="text" placeholder="{{item.telNum}}" [(ngModel)]="tel" name="tel"></ion-item>
+      <ion-item>密  &nbsp;&nbsp;&nbsp;码<input type="password" placeholder="{{item.password}}" [(ngModel)]="psw" name="psw"></ion-item>
+    </ion-list>
+    <div class="submit"><button (click)="setting()">确认保存</button></div>
+   </li>
+ </ul>
+</ion-content>
+<ion-footer style="display:none;background-color: #aaa;" id="footer">
+  <button ion-button block (click)="takephoto()">拍照</button>
+  <button ion-button block (click)="selectphoto()">从相册挑选</button>
+  <button ion-button block (click)="back()">取消</button>
+</ion-footer>
+<!-- <script>
+  function uploadByForm() {
+        //用form 表单直接 构造formData 对象; 就不需要下面的append 方法来为表单进行赋值了。
+        var formData = new FormData($("#myForm")[0]);
+        console.log(formData)
+        var url = "http://192.168.104.144:3000/before/upload";
+       $.ajax({
+            url: url,
+            type: 'POST',
+            data: formData,
+            
+            /**
+             * 必须false才会避开jQuery对 formdata 的默认处理
+             * XMLHttpRequest会对 formdata 进行正确的处理
+             */
+            processData: false,
+            /**
+             *必须false才会自动加上正确的Content-Type
+             */
+            contentType: false,
+            success: function (responseStr) {
+                alert(responseStr.newPath);
+                $("img").attr({"src": responseStr.newPath}).prependTo($("body"));
+            },
+            error: function (responseStr) {
+                alert(responseStr.newPath);
+            }
+        });
+    }
+</script> -->
+

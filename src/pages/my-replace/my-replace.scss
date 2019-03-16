@@ -1,0 +1,42 @@
+page-my-replace {
+    ul{
+        padding:0;
+        margin:0;
+    }
+    ion-content{
+        background-color: #eee !important;
+    }
+    .toolbar-title-md{
+        padding-left:80px;
+    }
+    .content1{
+        width:100%;
+        background-color:#fff;
+        margin-top:5px;
+        padding:5px 15px;
+        h5{
+            width: 70%;
+            color:#2aaf74;
+            margin-top:10px;
+        }
+        button{
+            width: 20%;
+            background-color: #fff;
+            float:right;
+            color: red;
+            margin-top: -30px;
+            text-align: right;
+        }
+        .issue{
+            margin:0px;
+            margin-top:10px;
+            margin-right:10px;
+        }
+        .time{
+            color:#ccc;
+            margin:0px 0px;
+            margin-top:10px;
+            width:100%;
+        }
+    }
+}

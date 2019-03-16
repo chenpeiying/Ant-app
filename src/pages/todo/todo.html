@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar color="gre">
+    <ion-title>日志清单</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+      <input [(ngModel)]="txt" type="text" (keydown)="getValue($event)" class="shuru" placeholder="输入待办事项">
+      <h5>Todo </h5><span>{{arr.length-counter}}件待办事项</span> 
+      <!-- 2、写入待办事件呈现列表 -->
+      <ul>
+          <ng-container *ngFor="let item of arr;let i = index;">
+              <li *ngIf="!item.done">
+                  <input (click)="change(i)" type="checkbox">
+                  {{item.title}}
+                  <!-- 3、删除按钮绑定点击事件 -->
+                  <button (click)="delete(i)">删除</button>
+              </li>
+          </ng-container>
+      </ul>
+      <h5>Done</h5> <span>{{counter}}件已完成</span>
+      <ul>
+          <ng-container *ngFor="let item of arr;let i = index;">
+              <li *ngIf="item.done">
+                  <input checked (click)="change(i)" type="checkbox">
+                  {{item.title}}
+                  <!-- 3、删除按钮绑定点击事件 -->
+                  <button (click)="delete(i)">删除</button>
+              </li>
+          </ng-container>
+      </ul>
+
+</ion-content>
